@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "json5": "^2.2.0",
+    "svgo": "^2.8.0"
+  },
+  "description": "Use SVG files as Vue Components",
+  "homepage": "https://github.com/tmcdos/svg-vue3-loader",
+  "keywords": [
+    "svg-vue3-loader",
+    "svg",
+    "svgo",
+    "loader",
+    "webpack",
+    "vue"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "svg-vue3-loader",
+  "peerDependencies": {
+    "@vue/compiler-sfc": "^3.2.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tmcdos/svg-vue3-loader.git"
+  },
+  "version": "1.0.1"
+}
