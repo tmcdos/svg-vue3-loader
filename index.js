@@ -10,6 +10,8 @@ const specialValues = {
   false: false,
 };
 
+let resPath;
+
 function parseQuery (query)
 {
   if (query.substr(0, 1) !== '?')
@@ -104,6 +106,7 @@ function getOptions (loaderContext)
 function compileSvg(source)
 {
   let { code } = compileTemplate({
+    id: resPath,
     source,
     transformAssetUrls: false,
   });
@@ -138,6 +141,7 @@ function svgToVue (content, options = {})
 module.exports = function(content)
 {
   const callback = this.async();
+  resPath = this.resourcePath;
   const { svgo } = getOptions(this) || {};
 
   try
